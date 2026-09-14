@@ -69,3 +69,30 @@ def run_gui(
     "qwen3-8B": "LOCAL",
 }
 ```
+
+### 配置环境变量
+
+最好不要把 API Key 直接写进源代码。直接运行本程序的模型得到AI的回复需要在 task_runner.py 中配置环境变量或写入 API KEY
+
+Windows PowerShell：
+
+```powershell
+$env:OPENAI_API_KEY="你的 API Key"
+$env:OPENAI_BASE_URL="https://你的接口地址/v1"
+```
+
+Windows CMD：
+
+```bat
+set OPENAI_API_KEY=你的 API Key
+set OPENAI_BASE_URL=https://你的接口地址/v1
+```
+
+Linux 或 macOS：
+
+```bash
+export OPENAI_API_KEY="你的 API Key"
+export OPENAI_BASE_URL="https://你的接口地址/v1"
+```
+
+如果使用 OpenAI 官方接口，可以不设置自定义 `OPENAI_BASE_URL`。
