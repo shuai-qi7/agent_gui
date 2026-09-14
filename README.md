@@ -72,7 +72,7 @@ def run_gui(
 
 ### 配置环境变量
 
-最好不要把 API Key 直接写进源代码。直接运行本程序的模型得到AI的回复需要在 task_runner.py 中配置环境变量或写入 API KEY
+最好不要把 API Key 直接写进源代码。直接运行本程序的模型得到AI的回复需要配置环境变量并在 task_runner.py 中修改有关环境变量的代码或在该脚本中写入 API KEY
 
 Windows PowerShell：
 
